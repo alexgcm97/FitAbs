@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity
         tx.replace(R.id.content_frame, new DefaultFragment());
         tx.commit();
         mStorageRef = FirebaseStorage.getInstance().getReference();
+        //Test
     }
 
     @Override
