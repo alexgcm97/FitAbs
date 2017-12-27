@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -18,34 +19,31 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/imgShoulders1"
         android:layout_width="156dp"
         android:layout_height="110dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25"
-        app:srcCompat="@drawable/barbellshoulderpress" />
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
     <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="155dp"
-        android:layout_height="112dp"
+        android:id="@+id/imgShoulders2"
+        android:layout_width="157dp"
+        android:layout_height="134dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="36dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView26"
-        app:srcCompat="@drawable/seatedbentoverraise" />
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/imgShoulders3"
         android:layout_width="156dp"
         android:layout_height="124dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="44dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView28"
-        app:srcCompat="@drawable/sidelateralraise" />
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
     <TextView
         android:id="@+id/textView26"
@@ -55,7 +53,7 @@
         android:layout_marginTop="4dp"
         android:text="@string/shouldersName1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+        app:layout_constraintTop_toBottomOf="@+id/imgShoulders1" />
 
     <TextView
         android:id="@+id/textView27"
@@ -65,7 +63,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/shouldersName3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+        app:layout_constraintTop_toBottomOf="@+id/imgShoulders3" />
 
     <TextView
         android:id="@+id/textView28"
@@ -75,7 +73,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/shouldersName2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+        app:layout_constraintTop_toBottomOf="@+id/imgShoulders2" />
 
     <TextView
         android:id="@+id/textView29"
@@ -86,7 +84,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/shouldersEx1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintStart_toEndOf="@+id/imgShoulders1"
         app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
     <TextView
@@ -99,7 +97,7 @@
         android:text="@string/shouldersEx2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.525"
-        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toEndOf="@+id/imgShoulders2"
         app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
     <TextView
@@ -112,7 +110,6 @@
         android:text="@string/shouldersEx3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
-        app:layout_constraintStart_toEndOf="@+id/imageView12"
+        app:layout_constraintStart_toEndOf="@+id/imgShoulders3"
         app:layout_constraintTop_toBottomOf="@+id/textView30" />
-
 </android.support.constraint.ConstraintLayout>

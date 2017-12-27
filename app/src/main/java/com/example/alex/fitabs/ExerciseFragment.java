@@ -9,6 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
+import com.bumptech.glide.Glide;
+import com.firebase.ui.storage.images.FirebaseImageLoader;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -37,6 +42,20 @@ public class ExerciseFragment extends Fragment {
         btnBack.setOnClickListener(btnListener);
         ImageButton btnChest = (ImageButton) v.findViewById(R.id.btnChest);
         btnChest.setOnClickListener(btnListener);
+
+        StorageReference storageRef = FirebaseStorage.getInstance().getReference();
+        StorageReference imgRef1 = storageRef.child("arms.png");
+        StorageReference imgRef2 = storageRef.child("chest.png");
+        StorageReference imgRef3 = storageRef.child("shoulders.png");
+        StorageReference imgRef4 = storageRef.child("leg.png");
+        StorageReference imgRef5 = storageRef.child("back.png");
+
+
+        Glide.with(this).using(new FirebaseImageLoader()).load(imgRef1).override(140,140).into(btnArms);
+        Glide.with(this).using(new FirebaseImageLoader()).load(imgRef2).override(140,140).into(btnChest);
+        Glide.with(this).using(new FirebaseImageLoader()).load(imgRef3).override(140,140).into(btnShoulders);
+        Glide.with(this).using(new FirebaseImageLoader()).load(imgRef4).override(140,140).into(btnLeg);
+        Glide.with(this).using(new FirebaseImageLoader()).load(imgRef5).override(140,140).into(btnBack);
         return v;
     }
 

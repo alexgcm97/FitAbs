@@ -8,34 +8,31 @@
 
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imgArms1"
         android:layout_width="159dp"
         android:layout_height="111dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="52dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/arms1" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/imgArms2"
         android:layout_width="158dp"
         android:layout_height="114dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/armsName1"
-        app:srcCompat="@drawable/arms2" />
+        app:layout_constraintTop_toBottomOf="@+id/armsName1" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/imgArms3"
         android:layout_width="158dp"
         android:layout_height="119dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/armsName2"
-        app:srcCompat="@drawable/arms3" />
+        app:layout_constraintTop_toBottomOf="@+id/armsName2" />
 
     <TextView
         android:id="@+id/armsName1"
@@ -44,7 +41,7 @@
         android:layout_marginStart="56dp"
         android:text="@string/armsName1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imgArms1" />
 
     <TextView
         android:id="@+id/armsName2"
@@ -53,7 +50,7 @@
         android:layout_marginStart="48dp"
         android:text="@string/armsName2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+        app:layout_constraintTop_toBottomOf="@+id/imgArms2" />
 
     <TextView
         android:id="@+id/armsName3"
@@ -62,7 +59,7 @@
         android:layout_marginStart="36dp"
         android:text="@string/armsName3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+        app:layout_constraintTop_toBottomOf="@+id/imgArms3" />
 
     <TextView
         android:id="@+id/armsEx1"
@@ -71,7 +68,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="52dp"
         android:text="@string/armsEx1"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imgArms1"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -81,7 +78,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
         android:text="@string/armsEx2"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintStart_toEndOf="@+id/imgArms2"
         app:layout_constraintTop_toBottomOf="@+id/armsEx1" />
 
     <TextView
@@ -91,7 +88,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="64dp"
         android:text="@string/armsEx3"
-        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toEndOf="@+id/imgArms3"
         app:layout_constraintTop_toBottomOf="@+id/armsEx2" />
 
     <TextView

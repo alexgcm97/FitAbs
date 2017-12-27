@@ -30,7 +30,6 @@ public class BMIFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_bmi, container, false);
-
         editTextHeight = (EditText) v.findViewById(R.id.editTextHeight);
         editTextWeight = (EditText) v.findViewById(R.id.editTextWeight);
         textViewResult = (TextView) v.findViewById(R.id.textViewResult);
@@ -38,6 +37,7 @@ public class BMIFragment extends Fragment {
         btnReset = (Button) v.findViewById(R.id.btnReset);
         btnCalculate.setOnClickListener(btnListener);
         btnReset.setOnClickListener(btnListener);
+
         return v;
     }
 
@@ -64,7 +64,7 @@ public class BMIFragment extends Fragment {
                     } else {
                         status = getResources().getString(R.string.over_weight);
                     }
-                    textViewResult.setText(getResources().getString(R.string.bmi) + String.format("%1.2f", bmi) + "\n" +  getResources().getString(R.string.status) + status);
+                    textViewResult.setText(getResources().getString(R.string.bmi) + String.format("%1.2f", bmi) + "\n" + getResources().getString(R.string.status) + status);
                     break;
                 }
                 case R.id.btnReset: {

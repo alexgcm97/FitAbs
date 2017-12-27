@@ -16,5 +16,9 @@
             android:id="@+id/nav_calculator"
             android:icon="@drawable/ic_menu_calculator"
             android:title="Calculator" />
+        <item
+            android:id="@+id/nav_recipe"
+            android:icon="@drawable/ic_menu_recipe"
+            android:title="Healthy Recipe" />
     </group>
 </menu>

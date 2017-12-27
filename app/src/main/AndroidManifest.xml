@@ -23,7 +23,11 @@
         <activity android:name=".ChestActivity" />
         <activity android:name=".BackActivity" />
         <activity android:name=".ShouldersActivity" />
-        <activity android:name=".ArmsActivity"></activity>
+        <activity android:name=".ArmsActivity" />
+        <activity android:name=".Recipe1Activity" />
+        <activity android:name=".Recipe2Activity" />
+        <activity android:name=".Recipe3Activity" />
+        <activity android:name=".Recipe4Activity"></activity>
     </application>
 
 </manifest>

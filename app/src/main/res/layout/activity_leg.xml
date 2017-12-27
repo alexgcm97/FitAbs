@@ -18,34 +18,31 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/imgLeg1"
         android:layout_width="165dp"
         android:layout_height="126dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView32"
-        app:srcCompat="@drawable/squats" />
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
 
     <ImageView
-        android:id="@+id/imageView14"
+        android:id="@+id/imgLeg2"
         android:layout_width="169dp"
         android:layout_height="119dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView33"
-        app:srcCompat="@drawable/lunges" />
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
 
     <ImageView
-        android:id="@+id/imageView15"
+        android:id="@+id/imgLeg3"
         android:layout_width="170dp"
         android:layout_height="131dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView34"
-        app:srcCompat="@drawable/legpress" />
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
     <TextView
         android:id="@+id/textView33"
@@ -55,7 +52,7 @@
         android:layout_marginTop="4dp"
         android:text="@string/legName1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+        app:layout_constraintTop_toBottomOf="@+id/imgLeg1" />
 
     <TextView
         android:id="@+id/textView34"
@@ -64,7 +61,7 @@
         android:layout_marginStart="60dp"
         android:text="@string/legName2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+        app:layout_constraintTop_toBottomOf="@+id/imgLeg2" />
 
     <TextView
         android:id="@+id/textView35"
@@ -73,7 +70,7 @@
         android:layout_marginStart="68dp"
         android:text="@string/legName3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+        app:layout_constraintTop_toBottomOf="@+id/imgLeg3" />
 
     <TextView
         android:id="@+id/textView36"
@@ -84,7 +81,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/legEx1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintStart_toEndOf="@+id/imgLeg1"
         app:layout_constraintTop_toBottomOf="@+id/textView32" />
 
     <TextView
@@ -96,7 +93,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/legEx2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        app:layout_constraintStart_toEndOf="@+id/imgLeg2"
         app:layout_constraintTop_toBottomOf="@+id/textView36" />
 
     <TextView
@@ -109,7 +106,7 @@
         android:text="@string/legEx3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.548"
-        app:layout_constraintStart_toEndOf="@+id/imageView15"
+        app:layout_constraintStart_toEndOf="@+id/imgLeg3"
         app:layout_constraintTop_toBottomOf="@+id/textView37" />
 
 </android.support.constraint.ConstraintLayout>
