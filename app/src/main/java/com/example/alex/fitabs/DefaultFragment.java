@@ -31,6 +31,7 @@ public class DefaultFragment extends Fragment {
         // Inflate the layout for this fragment
 
         StorageReference storageRef = FirebaseStorage.getInstance().getReference().child("quote");
+        System.out.println(storageRef);
         StorageReference imgRef = null;
 
         Date date = new Date();

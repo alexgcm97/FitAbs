@@ -6,6 +6,11 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="quote">Quote of the Day</string>
+    <string name="feedback">Feedback</string>
+    <string name="feedbackName">Enter Your Name</string>
+    <string name="feedbackMsg">Enter Your Message</string>
+    <string name="submit">Submit</string>
+    <string name="exercise">Exercise Guide</string>
 
     <string name="news">News</string>
     <string name="news1">Could exercise be making you sick? Up to half of athletes experience some form of gastrointestinal discomfort while exercising.  While the severity of symptoms varies between cases, these can include nausea, vomiting, abdominal angina, and bloody diarrhoea.  This is because blood flow is typically reduced during intense exercise, the Sports Medicine study revealed.</string>
