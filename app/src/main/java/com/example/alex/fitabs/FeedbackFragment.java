@@ -30,6 +30,8 @@ import static android.content.ContentValues.TAG;
 public class FeedbackFragment extends Fragment {
     String nameStr, msgStr;
     EditText editTextName, editTextMsg;
+    Button btnSubmit;
+    int count =0;
 
     public FeedbackFragment() {
         // Required empty public constructor
@@ -41,7 +43,7 @@ public class FeedbackFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_feedback, container, false);
-        Button btnSubmit = (Button) v.findViewById(R.id.btnSubmit);
+        btnSubmit = (Button) v.findViewById(R.id.btnSubmit);
         editTextName = (EditText) v.findViewById(R.id.editTextName);
         editTextMsg = (EditText) v.findViewById(R.id.editTextMsg);
 
@@ -55,33 +57,40 @@ public class FeedbackFragment extends Fragment {
 
         public void onClick(View v) {
             //do the same stuff or use switch/case and get each button ID and do different
+            if(count==3){
+                btnSubmit.setClickable(false);
+            }
             FirebaseFirestore db = FirebaseFirestore.getInstance();
             nameStr = editTextName.getText().toString();
             msgStr = editTextMsg.getText().toString();
+            if(msgStr.isEmpty()|| nameStr.isEmpty()){
+                Toast toast = Toast.makeText(getActivity().getBaseContext(), "Please enter your name or message.", Toast.LENGTH_SHORT);
+                toast.show();
+            } else {
+                count++;
+                Map<String, Object> feedback = new HashMap<>();
+                feedback.put("name", nameStr);
+                feedback.put("message", msgStr);
 
-            Map<String, Object> feedback = new HashMap<>();
-            feedback.put("name", nameStr);
-            feedback.put("message", msgStr);
-
-            db.collection("feedbacks")
-                    .add(feedback)
-                    .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                        @Override
-                        public void onSuccess(DocumentReference documentReference) {
-                            Toast toast = Toast.makeText(getActivity().getBaseContext(), "Feedback Submitted.", Toast.LENGTH_LONG);
-                            toast.show();
-                            Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
-                        }
-                    })
-                    .addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
-                            Toast toast = Toast.makeText(getActivity().getBaseContext(), "Feedback Failed to Submit..", Toast.LENGTH_LONG);
-                            toast.show();
-                            Log.w(TAG, "Error adding document", e);
-                        }
-                    });
-
+                db.collection("feedbacks")
+                        .add(feedback)
+                        .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                            @Override
+                            public void onSuccess(DocumentReference documentReference) {
+                                Toast toast = Toast.makeText(getActivity().getBaseContext(), "Feedback Submitted.", Toast.LENGTH_SHORT);
+                                toast.show();
+                                Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
+                            }
+                        })
+                        .addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                Toast toast = Toast.makeText(getActivity().getBaseContext(), "Feedback Failed to Submit..", Toast.LENGTH_SHORT);
+                                toast.show();
+                                Log.w(TAG, "Error adding document", e);
+                            }
+                        });
+            }
         }
 
     };

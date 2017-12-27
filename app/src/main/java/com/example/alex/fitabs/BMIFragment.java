@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 /**
@@ -48,23 +49,30 @@ public class BMIFragment extends Fragment {
             //stuff depending on the ID
             switch (v.getId()) {
                 case R.id.btnCalculate: {
+                    String weightStr = editTextWeight.getText().toString();
+                    String heightStr = editTextHeight.getText().toString();
                     Double weight = 0.0, height = 0.0;
                     Double bmi = 0.0;
                     String status = "";
 
-                    weight = Double.valueOf(editTextWeight.getText().toString());
-                    height = Double.valueOf(editTextHeight.getText().toString()) / 100;
-
-                    bmi = weight / (height * height);
-
-                    if (bmi < 18.5) {
-                        status = getResources().getString(R.string.under_weight);
-                    } else if (bmi >= 18.5 && bmi <= 24.9) {
-                        status = getResources().getString(R.string.normal);
+                    if (weightStr.isEmpty() || heightStr.isEmpty()) {
+                        Toast toast = Toast.makeText(getActivity().getBaseContext(), "Please enter your weight or height.", Toast.LENGTH_SHORT);
+                        toast.show();
                     } else {
-                        status = getResources().getString(R.string.over_weight);
+                        weight = Double.valueOf(weightStr);
+                        height = Double.valueOf(heightStr) / 100;
+
+                        bmi = weight / (height * height);
+
+                        if (bmi < 18.5) {
+                            status = getResources().getString(R.string.under_weight);
+                        } else if (bmi >= 18.5 && bmi <= 24.9) {
+                            status = getResources().getString(R.string.normal);
+                        } else {
+                            status = getResources().getString(R.string.over_weight);
+                        }
+                        textViewResult.setText(getResources().getString(R.string.bmi) + String.format("%1.2f", bmi) + "\n" + getResources().getString(R.string.status) + status);
                     }
-                    textViewResult.setText(getResources().getString(R.string.bmi) + String.format("%1.2f", bmi) + "\n" + getResources().getString(R.string.status) + status);
                     break;
                 }
                 case R.id.btnReset: {
