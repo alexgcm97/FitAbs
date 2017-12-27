@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "297584690459",
+    "firebase_url": "https://fitabs-90b4f.firebaseio.com",
+    "project_id": "fitabs-90b4f",
+    "storage_bucket": "fitabs-90b4f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297584690459:android:db96320278189ca7",
+        "android_client_info": {
+          "package_name": "com.example.alex.fitabs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297584690459-el0rtmkj0d9g6m160bkte58j4bovc2md.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.alex.fitabs",
+            "certificate_hash": "4a7f03ecd736e6d47616e5bb4e0f6e4721c33ae9"
+          }
+        },
+        {
+          "client_id": "297584690459-g3ai2d80adth6m4d6clbb2i396m7qu8r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9-EPslT9YWb3xnlb7M2MJsp-RJMegN8M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "297584690459-g3ai2d80adth6m4d6clbb2i396m7qu8r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

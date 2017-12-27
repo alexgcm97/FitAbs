@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">FitAbs</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="action_settings">Setting</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="quote">Quote of the Day</string>
+
+    <string name="news">News</string>
+    <string name="news1">Could exercise be making you sick? Up to half of athletes experience some form of gastrointestinal discomfort while exercising.  While the severity of symptoms varies between cases, these can include nausea, vomiting, abdominal angina, and bloody diarrhoea.  This is because blood flow is typically reduced during intense exercise, the Sports Medicine study revealed.</string>
+    <string name="news2">After four years in the finance industry, prioritising her work not her health, Nessa had gained weight. But she then embarked on a new healthy lifestyle, started documenting it on Instagram, and now has 358,000 followers.</string>
+
+    <string name="arms">Arms</string>
+    <string name="armsEx">Arms Exercise</string>
+    <string name="armsName1">Bicep Curls</string>
+    <string name="armsName2">Hammer Curls</string>
+    <string name="armsName3">Tricep Push Down</string>
+    <string name="armsEx1">Stand up straight with a dumbbell in each hand at arm length. Keep your elbows close to your torso and rotate the palms of your hands until they face forward.</string>
+    <string name="armsEx2">Stand up with your torso upright and a dumbbell on each hand being held at arms length. The elbows should be close to the torso.</string>
+    <string name="armsEx3">Attach a straight or angled bar to a high pulley and grab with an overhand grip (palms facing down) at shoulder width. Standing upright with the torso straight and a very small inclination forward, bring the upper arms close to your body and perpendicular to the floor.</string>
+
+    <string name="chest">Chest</string>
+    <string name="chestEx">Chest Exercise</string>
+    <string name="chestName1">Bench Press</string>
+    <string name="chestName2">Incline Press</string>
+    <string name="chestName3">Decline Press</string>
+    <string name="chestEx1">Lie faceup on a horizontal bench, with buttocks on the bench and feet flat on the ground.</string>
+    <string name="chestEx2">Lie back on an incline bench with a dumbbell in each hand atop your thighs. The palms of your hands will be facing each other.</string>
+    <string name="chestEx3">Lie on decline bench (between 20 ad 40 degrees). with the head angled down and feet fixe to prevent sliding and grasp the barbell with an overhand grip shoulder with.</string>
+
+    <string name="shoulders">Shoulders</string>
+    <string name="shouldersEx">Shoulders Exercise</string>
+    <string name="shouldersName1">Barberll Shoulder Press</string>
+    <string name="shouldersName2">Side Lateral Raise</string>
+    <string name="shouldersName3">Seated Lateral Raise</string>
+    <string name="shouldersEx1">Sit on a bench with back support in a squat rack. Position a barbell at a height that is just above your head. Once you pick up the barbell with the correct grip width, lift the bar up over your head by locking your arms.</string>
+    <string name="shouldersEx2">Side Lateral Raise. The dumbbell lateral raise is an isolation exercise that strengthens the entire shoulder with an emphasis on the sides of the deltoid muscles. Standing in a shoulder-width stance, grab a pair of dumbbells with palms facing inward and let them hang at your sides.</string>
+    <string name="shouldersEx3">Grab a set of dumbbells and sit upright on a flat bench. Allow your arms to hang down by your sides with your palms facing towards each other.</string>
+
+    <string name="leg">Leg</string>
+    <string name="legEx">Leg Exercise</string>
+    <string name="legName1">Squats</string>
+    <string name="legName2">Leg Press</string>
+    <string name="legName3">Lunges</string>
+    <string name="legEx1">Begin with the barbell supported on top of the traps. The chest should be up and the head facing forward.Descend by flexing the knees, refraining from moving the hips back as much as possible.</string>
+    <string name="legEx2"> Keep your upper body straight, with your shoulders back and relaxed and chin up.</string>
+    <string name="legEx3">Using a leg press machine, sit down on the machine and place your legs on the platform directly in front of you at a medium (shoulder width) foot stance.</string>
+
+    <string name="back">Back</string>
+    <string name="backEx">Back Exercise</string>
+    <string name="backName1">DeadLift</string>
+    <string name="backName2">Bend Over Barbell Row</string>
+    <string name="backName3">Wide-Grip Pull Up</string>
+    <string name="backEx1">Grab the bar. Bend over without bending your legs. Bend your knees. Drop into position by bending your knees until your shins touch the bar.</string>
+    <string name="backEx2">Holding a barbell with a pronated grip, bend your knees slightly and bring your torso forward, by bending at the waist, while keeping the back straight until it is almost parallel to the floor.</string>
+    <string name="backEx3">Begin from a dead hang, elbows straight, chest up, shoulders back and tight, eyes trained on the bar above. Pull yourself up toward the bar.</string>
+
+    <string name="bmiTitle">BMI Calculator</string>
+    <string name="calculate">Calculate</string>
+    <string name="reset">Reset</string>
+    <string name="weight">Weight (KG)</string>
+    <string name="height">Height (CM)</string>
+    <string name="under_weight">Under Weight</string>
+    <string name="normal">Normal</string>
+    <string name="over_weight">Over Weight</string>
+    <string name="status">Status :</string>
+    <string name="bmi">BMI :</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
