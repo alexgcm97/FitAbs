@@ -32,15 +32,15 @@ public class ExerciseFragment extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_exercise, container, false);
 
-        ImageButton btnLeg = (ImageButton) v.findViewById(R.id.btnLeg);
+        ImageButton btnLeg = v.findViewById(R.id.btnLeg);
         btnLeg.setOnClickListener(btnListener);
-        ImageButton btnArms = (ImageButton) v.findViewById(R.id.btnArms);
+        ImageButton btnArms = v.findViewById(R.id.btnArms);
         btnArms.setOnClickListener(btnListener);
-        ImageButton btnShoulders = (ImageButton) v.findViewById(R.id.btnShoulders);
+        ImageButton btnShoulders = v.findViewById(R.id.btnShoulders);
         btnShoulders.setOnClickListener(btnListener);
-        ImageButton btnBack = (ImageButton) v.findViewById(R.id.btnBack);
+        ImageButton btnBack = v.findViewById(R.id.btnBack);
         btnBack.setOnClickListener(btnListener);
-        ImageButton btnChest = (ImageButton) v.findViewById(R.id.btnChest);
+        ImageButton btnChest = v.findViewById(R.id.btnChest);
         btnChest.setOnClickListener(btnListener);
 
         StorageReference storageRef = FirebaseStorage.getInstance().getReference();
@@ -51,11 +51,11 @@ public class ExerciseFragment extends Fragment {
         StorageReference imgRef5 = storageRef.child("back.png");
 
 
-        Glide.with(this).using(new FirebaseImageLoader()).load(imgRef1).override(140,140).into(btnArms);
-        Glide.with(this).using(new FirebaseImageLoader()).load(imgRef2).override(140,140).into(btnChest);
-        Glide.with(this).using(new FirebaseImageLoader()).load(imgRef3).override(140,140).into(btnShoulders);
-        Glide.with(this).using(new FirebaseImageLoader()).load(imgRef4).override(140,140).into(btnLeg);
-        Glide.with(this).using(new FirebaseImageLoader()).load(imgRef5).override(140,140).into(btnBack);
+        Glide.with(this).load(imgRef1).into(btnArms);
+        Glide.with(this).load(imgRef2).into(btnChest);
+        Glide.with(this).load(imgRef3).into(btnShoulders);
+        Glide.with(this).load(imgRef4).into(btnLeg);
+        Glide.with(this).load(imgRef5).into(btnBack);
         return v;
     }
 

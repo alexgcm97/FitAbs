@@ -16,17 +16,17 @@ public class ShouldersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shoulders);
 
-        ImageView imgShoulders1 = (ImageView) findViewById(R.id.imgShoulders1);
-        ImageView imgShoulders2 = (ImageView) findViewById(R.id.imgShoulders2);
-        ImageView imgShoulders3 = (ImageView) findViewById(R.id.imgShoulders3);
+        ImageView imgShoulders1 = findViewById(R.id.imgShoulders1);
+        ImageView imgShoulders2 = findViewById(R.id.imgShoulders2);
+        ImageView imgShoulders3 = findViewById(R.id.imgShoulders3);
 
         StorageReference storageRef = FirebaseStorage.getInstance().getReference();
         StorageReference imgRef1 = storageRef.child("shoulder1.jpg");
         StorageReference imgRef2 = storageRef.child("shoulder2.jpg");
         StorageReference imgRef3 = storageRef.child("shoulder3.jpg");
 
-        Glide.with(this).using(new FirebaseImageLoader()).load(imgRef1).into(imgShoulders1);
-        Glide.with(this).using(new FirebaseImageLoader()).load(imgRef2).into(imgShoulders2);
-        Glide.with(this).using(new FirebaseImageLoader()).load(imgRef3).into(imgShoulders3);
+        Glide.with(this).load(imgRef1).into(imgShoulders1);
+        Glide.with(this).load(imgRef2).into(imgShoulders2);
+        Glide.with(this).load(imgRef3).into(imgShoulders3);
     }
 }

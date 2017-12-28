@@ -70,8 +70,8 @@
     <string name="under_weight">Under Weight</string>
     <string name="normal">Normal</string>
     <string name="over_weight">Over Weight</string>
-    <string name="status">Status :</string>
-    <string name="bmi">BMI :</string>
+    <string name="status">Status: </string>
+    <string name="bmi">BMI: </string>
 
 
     <string name="healthyrecipe">Healthy Recipes</string>

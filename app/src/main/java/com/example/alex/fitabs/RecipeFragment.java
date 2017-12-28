@@ -32,13 +32,13 @@ public class RecipeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_recipe, container, false);
-        ImageButton btnRecipe1 = (ImageButton) v.findViewById(R.id.btnRecipe1);
+        ImageButton btnRecipe1 = v.findViewById(R.id.btnRecipe1);
         btnRecipe1.setOnClickListener(btnListener);
-        ImageButton btnRecipe2 = (ImageButton) v.findViewById(R.id.btnRecipe2);
+        ImageButton btnRecipe2 = v.findViewById(R.id.btnRecipe2);
         btnRecipe2.setOnClickListener(btnListener);
-        ImageButton btnRecipe3 = (ImageButton) v.findViewById(R.id.btnRecipe3);
+        ImageButton btnRecipe3 = v.findViewById(R.id.btnRecipe3);
         btnRecipe3.setOnClickListener(btnListener);
-        ImageButton btnRecipe4 = (ImageButton) v.findViewById(R.id.btnRecipe4);
+        ImageButton btnRecipe4 = v.findViewById(R.id.btnRecipe4);
         btnRecipe4.setOnClickListener(btnListener);
 
         StorageReference storageRef = FirebaseStorage.getInstance().getReference().child("recipe");
@@ -47,10 +47,10 @@ public class RecipeFragment extends Fragment {
         StorageReference imgRef3 = storageRef.child("recipe3.jpeg");
         StorageReference imgRef4 = storageRef.child("recipe4.jpeg");
 
-        Glide.with(this).using(new FirebaseImageLoader()).load(imgRef1).into(btnRecipe1);
-        Glide.with(this).using(new FirebaseImageLoader()).load(imgRef2).into(btnRecipe2);
-        Glide.with(this).using(new FirebaseImageLoader()).load(imgRef3).into(btnRecipe3);
-        Glide.with(this).using(new FirebaseImageLoader()).load(imgRef4).into(btnRecipe4);
+        Glide.with(this).load(imgRef1).into(btnRecipe1);
+        Glide.with(this).load(imgRef2).into(btnRecipe2);
+        Glide.with(this).load(imgRef3).into(btnRecipe3);
+        Glide.with(this).load(imgRef4).into(btnRecipe4);
 
         return v;
     }

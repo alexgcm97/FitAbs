@@ -18,10 +18,10 @@ public class Recipe4Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe4);
         StorageReference storageRef = FirebaseStorage.getInstance().getReference().child("recipe/recipe4.jpeg");
-        ImageView imgRecipe4 = (ImageView) findViewById(R.id.imgRecipe4);
-        Glide.with(this).using(new FirebaseImageLoader()).load(storageRef).into(imgRecipe4);
+        ImageView imgRecipe4 = findViewById(R.id.imgRecipe4);
+        Glide.with(this).load(storageRef).into(imgRecipe4);
 
-        TextView textRecipe4 = (TextView) findViewById(R.id.textRecipe4);
+        TextView textRecipe4 = findViewById(R.id.textRecipe4);
         textRecipe4.setMovementMethod(new ScrollingMovementMethod());
     }
 }

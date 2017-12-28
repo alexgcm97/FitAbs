@@ -31,11 +31,10 @@ public class DefaultFragment extends Fragment {
         // Inflate the layout for this fragment
 
         StorageReference storageRef = FirebaseStorage.getInstance().getReference().child("quote");
-        System.out.println(storageRef);
         StorageReference imgRef = null;
+        View v = inflater.inflate(R.layout.fragment_default, container, false);
 
         Date date = new Date();
-        View v = inflater.inflate(R.layout.fragment_default, container, false);
         ImageView imgQuote = (ImageView) v.findViewById(R.id.imgQuote);
         System.out.println(date.getDay());
         switch (date.getDay()) {
@@ -61,7 +60,7 @@ public class DefaultFragment extends Fragment {
                 imgRef = storageRef.child("sunday.jpg");
                 break;
         }
-        Glide.with(this).using(new FirebaseImageLoader()).load(imgRef).into(imgQuote);
+        Glide.with(this).load(imgRef).into(imgQuote);
         return v;
     }
 

@@ -73,8 +73,8 @@
     <string name="under_weight">Kurang Berat Badan</string>
     <string name="normal">Normal</string>
     <string name="over_weight">Berat Badan Berlebihan</string>
-    <string name="status">Status :</string>
-    <string name="bmi">BMI :</string>
+    <string name="status">Status: </string>
+    <string name="bmi">BMI: </string>
 
 
     <string name="healthyrecipe">resipi sihat</string>

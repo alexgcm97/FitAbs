@@ -16,17 +16,17 @@ public class ArmsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_arms);
         
-        ImageView imgArms1 = (ImageView) findViewById(R.id.imgArms1);
-        ImageView imgArms2 = (ImageView) findViewById(R.id.imgArms2);
-        ImageView imgArms3 = (ImageView) findViewById(R.id.imgArms3);
+        ImageView imgArms1 = findViewById(R.id.imgArms1);
+        ImageView imgArms2 = findViewById(R.id.imgArms2);
+        ImageView imgArms3 = findViewById(R.id.imgArms3);
 
         StorageReference storageRef = FirebaseStorage.getInstance().getReference();
         StorageReference imgRef1 = storageRef.child("arms1.jpg");
         StorageReference imgRef2 = storageRef.child("arms2.jpg");
         StorageReference imgRef3 = storageRef.child("arms3.jpg");
 
-        Glide.with(this).using(new FirebaseImageLoader()).load(imgRef1).into(imgArms1);
-        Glide.with(this).using(new FirebaseImageLoader()).load(imgRef2).into(imgArms2);
-        Glide.with(this).using(new FirebaseImageLoader()).load(imgRef3).into(imgArms3);
+        Glide.with(this).load(imgRef1).into(imgArms1);
+        Glide.with(this).load(imgRef2).into(imgArms2);
+        Glide.with(this).load(imgRef3).into(imgArms3);
     }
 }
