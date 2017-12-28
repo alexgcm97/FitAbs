@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">FitAbs</string>
+    <string name="open">Buka</string>
+    <string name="close">Tutup</string>
+    <string name="action_settings">Penetapan</string>
+    <string name="navigation_drawer_open">Buka laci navigasi</string>
+    <string name="navigation_drawer_close">Tutup laci navigasi</string>
+    <string name="quote">Mutiara kata untuk hari ini</string>
+    <string name="feedback">Maklum balas</string>
+    <string name="feedbackName">Masukkan nama anda</string>
+    <string name="feedbackMsg">Msukkan mesej anda</string>
+    <string name="submit">Hantar</string>
+    <string name="exercise">Senaman</string>
+
+
+    <string name="news">Berita</string>
+    <string name="news1">Bolehkah latihan membuat anda sakit? Sehingga separuh atlet mengalami beberapa bentuk ketidakselesaan gastrointestinal semasa bersenam. Walaupun keparahan gejala berbeza-beza antara kes, ini boleh termasuk loya, muntah, angina perut, dan cirit-birit berdarah. Ini kerana aliran darah biasanya dikurangkan semasa latihan sengit, kajian Perubatan Sukan mendedahkan.</string>
+    <string name="news2">Selepas empat tahun dalam industri kewangan, mengutamakan pekerjaannya bukan kesihatannya, Nessa telah mendapat berat badan. Tetapi dia kemudian memulakan gaya hidup sihat baru, mula mendokumeninya di Instagram, dan kini mempunyai 358,000 pengikut.</string>
+
+    <string name="arms">Lengan</string>
+
+    <string name="armsEx">Latihan legan</string>
+    <string name="armsName1">Bicep Curls</string>
+    <string name="armsName2">Hammer Curls</string>
+    <string name="armsName3">Tricep Push Down</string>
+    <string name="armsEx1">Berdiri lurus dengan dumbbell di setiap tangan pada panjang lengan. Pastikan siku anda dekat dengan badan anda dan putar telapak tangan anda sehingga mereka menghadap ke hadapan.</string>
+    <string name="armsEx2">Berdiri dengan badan anda tegak dan dumbbell di setiap tangan yang dipegang pada panjang lengan. Siku harus dekat dengan batang tubuh.</string>
+    <string name="armsEx3">Pasang bar lurus atau bersudut ke kapi yang tinggi dan ambil dengan cengkaman tangan (palms facing down) pada lebar bahu. Berdiri tegak dengan batang badan lurus dan kecenderungan yang sangat kecil ke hadapan, bawa lengan atas rapat ke badan anda dan serenjang ke lantai.</string>
+
+    <string name="chest">Dada</string>
+    <string name="chestEx">Latihan Dada</string>
+    <string name="chestName1">Bench Press</string>
+    <string name="chestName2">Incline Press</string>
+    <string name="chestName3">Decline Press</string>
+    <string name="chestEx1">Lie menghadapi di bangku mendatar, dengan punggung di atas bangku dan kaki rata di atas tanah.</string>
+    <string name="chestEx2">Bersandar di bangku belakang dengan dumbbell di setiap tangan berhenti paha anda. Telapak tangan anda akan menghadapi satu sama lain.</string>
+    <string name="chestEx3">Bersandar pada bangku simpanan (antara 20 ad 40 darjah). dengan kepala bersudut ke bawah dan kaki fixe untuk mengelakkan gelongsor dan genggam barbeku dengan bahu cengkaman overhand dengan.</string>
+
+    <string name="shoulders">Bahu</string>
+    <string name="shouldersEx">Latihan Bahu</string>
+    <string name="shouldersName1">Barberll Shoulder Press</string>
+    <string name="shouldersName2">Side Lateral Raise</string>
+    <string name="shouldersName3">Seated Lateral Raise</string>
+    <string name="shouldersEx1">Duduk di bangku simpanan dengan sokongan belakang dalam rak jongkok. Posisi barbell pada ketinggian yang berada di atas kepala anda. Sebaik sahaja anda mengambil barbeku dengan lebar cengkaman yang betul, angkat bar di atas kepala anda dengan mengunci lengan anda.</string>
+    <string name="shouldersEx2">Menaikkan Lateral Side. Dumbbell lateral raise adalah latihan pengasingan yang menguatkan seluruh bahu dengan penekanan pada sisi otot deltoid. Berdiri dalam pendirian bahu, ambil sepasang dumbbells dengan telapak tangan menghadap ke dalam dan biarkan mereka menggantung di sebelah anda.</string>
+    <string name="shouldersEx3">Dapatkan satu set dumbbells dan duduk tegak di atas bangku rata. Benarkan tangan anda digantung di sisi anda dengan telapak tangan anda menghadap ke arah yang lain</string>
+
+    <string name="leg">Kaki</string>
+    <string name="legEx">Latihan Kaki</string>
+    <string name="legName1">Squats</string>
+    <string name="legName2">Leg Press</string>
+    <string name="legName3">Lunges</string>
+    <string name="legEx1">Mulakan dengan barbell yang disokong di atas perangkap. Dada harus naik dan kepala menghadap ke hadapan. Meningkatkan dengan melenturkan lutut, menahan diri dari memindahkan pinggul kembali sebanyak mungkin.</string>
+    <string name="legEx2">Pastikan bahagian atas badan lurus, dengan bahu anda kembali dan santai dan dagu.</string>
+    <string name="legEx3">Menggunakan mesin akhbar kaki, duduk di atas mesin dan letakkan kaki anda di atas platform secara langsung di hadapan anda pada kedudukan kaki (lebar bahu).</string>
+
+    <string name="back">Belakang</string>
+    <string name="backEx">Latihan Belakang</string>
+    <string name="backName1">DeadLift</string>
+    <string name="backName2">Bend Over Barbell Row</string>
+    <string name="backName3">Wide-Grip Pull Up</string>
+    <string name="backEx1">Dapatkan bar. Bengkokkan tanpa membengkokkan kaki anda. Bengkokkan lutut anda. Jatuhkan ke kedudukan dengan lentur lutut sehingga sentuhan anda menyentuh bar.</string>
+    <string name="backEx2">Memegang barbeku dengan cengkaman pronated, bengkokkan lutut anda dengan sedikit dan bawa badan anda ke hadapan, dengan membongkok pinggang, sambil mengekalkan lengan belakang hingga hampir sejajar dengan lantai.</string>
+    <string name="backEx3">Mulailah dari gantung mati, siku lurus, dada naik, bahu belakang dan ketat, mata terlatih di bar di atas. Tarik diri ke arah bar.</string>
+
+    <string name="bmiTitle">Kalkulator BMI</string>
+    <string name="calculate">Kira</string>
+    <string name="reset">Semula</string>
+    <string name="weight">Berat Badan (KG)</string>
+    <string name="height">Ketiggian (CM)</string>
+    <string name="under_weight">Kurang Berat Badan</string>
+    <string name="normal">Normal</string>
+    <string name="over_weight">Berat Badan Berlebihan</string>
+    <string name="status">Status :</string>
+    <string name="bmi">BMI :</string>
+
+
+    <string name="healthyrecipe">resipi sihat</string>
+    <string name="salmon">Salmon Panggang Ketuhar</string>
+    <string name="cloveschicken">40 ulas dan ayam</string>
+    <string name="garlicShrimp">Udang Bawang Putih</string>
+    <string name="romanchicken">Ayam Gaya Roman</string>
+
+    <string name="cloveschickenexp">
+
+        Bahan-bahan: \n
+            1 ayam keseluruhan (broiler / fryer) dipotong menjadi 8 buah \n
+            1/2 cawan ditambah 2 sudu minyak zaitun \n
+            10 batang lembu segar \n
+            40 bawang putih cengkeh yang dikupas \n
+            Garam dan lada \n\n
+        Arahan: \n
+            1) Panaskan oven hingga 350 darjah F. \n
+            2) Musim ayam dengan garam dan lada. \n
+            3) Tosok dengan 2 sudu minyak zaitun dan coklat di kedua-dua belah dalam kuali yang luas atau kuali yang luas di atas api yang tinggi. \ n
+            4) Keluarkan dari panas, tambah minyak, thyme, dan bawang putih. Tutup dan bakar selama 1 1/2 jam. \ n
+            5) Keluarkan ayam dari ketuhar, biarkan berehat selama 5 hingga 10 minit, mengukir, dan berkhidmat. \ n
+    </string>
+    <string name="garlicshrimpexp">
+
+Bahan-bahan: \n
+            8 sudu besar (1 batang) mentega tanpa lemak, dibahagikan \n
+            1 1/2 paun udang sederhana, dikupas dan deveined \n
+            Garam Kosher dan lada hitam segar, secukup rasa \n
+            5 ulas bawang putih, cincang \n
+            1/4 cawan ayam stok \n
+            Jus 1 lemon, atau lebih, secukup rasa \n
+            2 sudu daun cili segar dicincang \n \n
+        Arahan: \n
+            1) Melelehkan 2 sudu mentega dalam kuali yang besar di atas api tinggi sederhana.\n
+            2) Tambah udang, garam dan lada, secukup rasa. Masak, kacau sekali-sekala, sehingga merah jambu, kira-kira 2-3 minit; mengetepikan.\n
+            3) Masukkan bawang putih ke kuali, dan masak, kacau kerap, sehingga wangi, kira-kira 1 minit. \n
+            4) Aduk stok ayam dan jus lemon. \n
+            5) Bawa mendidih; Kurangkan haba dan reneh sehingga dikurangkan separuh, kira-kira 1-2 minit. \n
+            6) Kacau dalam sisa 6 sudu mentega, 1 sudu pada satu masa, sehingga cair dan licin. \n
+            7) Kacau udang dan perlahan-lahan melemparkan untuk menggabungkan. \n
+            8) Hidangkan dengan segera, dihiasi dengan daun pasli, jika dikehendaki. \n
+    </string>
+    <string name="romanchickenexp">
+        Bahan-bahan: \n
+            4 buah dada ayam tanpa kulit, dengan tulang rusuk \n
+            2 paha ayam tanpa kulit, dengan tulang \n
+            1/2 sudu teh garam, tambah 1 sudu teh \n
+            1/2 sudu teh baru lada hitam, tambah 1 sudu teh \n
+            1/4 cawan minyak zaitun \n
+            1 buah lada merah, dihiris \n
+            1 lada loceng kuning, dihiris \n
+            3 auns prosciutto, cincang \n
+            2 ulas bawang putih, cincang \n
+            1 (15 ounce) boleh diced tomato \n
+            1/2 cawan wain putih \n
+            1 sudu daun thyme segar \n
+            1 sudu daun oregano segar \n
+            1/2 cawan ayam stok \n
+            2 sudu makan capers \n
+            1/4 cawan daun pasli daun rata segar dicincang \n\n
+        Arahan: \n
+            1) Musim ayam dengan 1/2 sudu teh garam dan 1/2 sudu teh lada. Dalam kuali besar, panaskan minyak zaitun ke atas api sederhana. Apabila minyak panas, masak ayam sehingga ditenun pada kedua belah pihak. Keluarkan dari kuali dan sisihkan. \n
+            2) Simpan kuali yang sama dengan api sederhana, tambah lada dan prosciutto dan masak sehingga lada telah ditenun dan prosciutto segar, kira-kira 5 minit. \n
+            3) Masukkan bawang putih dan masak selama 1 minit. Tambahkan tomato, wain, dan herba. Menggunakan sudu kayu, mengikis bit pelik dari bahagian bawah kuali. Kembalikan ayam ke kuali, tambah stok, dan bawa campuran ke dalam mendidih. Kurangkan haba dan reneh, ditutupi, sehingga ayam dimasak, sekitar 20 hingga 30 minit. \n
+    </string>
+    <string name="salmonexp">
+
+Bahan-bahan: \n
+            2 ulas bawang putih, cincang \n
+            6 sudu minyak zaitun ringan \n
+            1 sudu teh kering basil \n
+            1 garam sudu \n
+            1 sudu teh tanah lada hitam \n
+            1 sudu besar jus lemon \n
+            1 sudu besar pasli segar, dicincang \n
+            2 (6 ounce) salmon fillet \n\n
+        Arahan: \n
+            1) Dalam mangkuk kaca sederhana, sediakan perapian dengan mencampurkan bawang putih, minyak zaitun ringan, kemangi, garam, lada, jus lemon dan pasli. Tempatkan filamen salmon dalam mangkuk pembakar kaca sederhana, dan tutup dengan pengasam. Marinate dalam peti sejuk kira-kira 1 jam, beralih kadang-kadang. \n
+            2) Panaskan ketuhar kepada 375 darjah F (190 darjah C). \n
+            3) Tempatkan filet dalam aluminium foil, tutup dengan perapan, dan meterai. Letakkan salmon yang disegel di dalam mangkuk kaca, dan bakar 35 hingga 45 minit, sehingga mudah dipecahkan dengan garpu. \n
+    </string>
+</resources>

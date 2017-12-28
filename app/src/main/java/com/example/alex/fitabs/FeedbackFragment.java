@@ -57,8 +57,10 @@ public class FeedbackFragment extends Fragment {
 
         public void onClick(View v) {
             //do the same stuff or use switch/case and get each button ID and do different
-            if(count==3){
+            if(count>3){
                 btnSubmit.setClickable(false);
+                Toast toast = Toast.makeText(getActivity().getBaseContext(), "Sorry, you have reached the daily feedback count of 3 submits.", Toast.LENGTH_SHORT);
+                toast.show();
             }
             FirebaseFirestore db = FirebaseFirestore.getInstance();
             nameStr = editTextName.getText().toString();
@@ -67,7 +69,6 @@ public class FeedbackFragment extends Fragment {
                 Toast toast = Toast.makeText(getActivity().getBaseContext(), "Please enter your name or message.", Toast.LENGTH_SHORT);
                 toast.show();
             } else {
-                count++;
                 Map<String, Object> feedback = new HashMap<>();
                 feedback.put("name", nameStr);
                 feedback.put("message", msgStr);
@@ -77,7 +78,7 @@ public class FeedbackFragment extends Fragment {
                         .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                             @Override
                             public void onSuccess(DocumentReference documentReference) {
-                                Toast toast = Toast.makeText(getActivity().getBaseContext(), "Feedback Submitted.", Toast.LENGTH_SHORT);
+                                Toast toast = Toast.makeText(getActivity().getBaseContext(), "Feedback Submitted.\n Daily Feedback Count:" + ++count + " out of 3", Toast.LENGTH_SHORT);
                                 toast.show();
                                 Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
                             }
