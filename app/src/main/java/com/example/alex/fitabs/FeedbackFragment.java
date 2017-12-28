@@ -18,6 +18,9 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -32,6 +35,8 @@ public class FeedbackFragment extends Fragment {
     EditText editTextName, editTextMsg;
     Button btnSubmit;
     int count =0;
+    Date date = new Date();
+    DateFormat df = new SimpleDateFormat("dd-MM-yyyy HH:mm");
 
     public FeedbackFragment() {
         // Required empty public constructor
@@ -71,6 +76,7 @@ public class FeedbackFragment extends Fragment {
             } else {
                 Map<String, Object> feedback = new HashMap<>();
                 feedback.put("name", nameStr);
+                feedback.put("dateTime", df.format(date));
                 feedback.put("message", msgStr);
 
                 db.collection("feedbacks")
