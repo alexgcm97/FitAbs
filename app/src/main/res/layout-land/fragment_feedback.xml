@@ -25,10 +25,10 @@
 
         <EditText
             android:id="@+id/editTextName"
-            android:layout_width="360dp"
+            android:layout_width="300dp"
             android:layout_height="43dp"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="40dp"
             android:ems="10"
             android:hint="@string/feedbackName"
             android:imeOptions="actionDone"
@@ -38,36 +38,35 @@
 
         <EditText
             android:id="@+id/editTextMsg"
-            android:layout_width="360dp"
-            android:layout_height="180dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="24dp"
+            android:layout_width="305dp"
+            android:layout_height="212dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
             android:ems="10"
             android:hint="@string/feedbackMsg"
             android:imeOptions="actionDone"
             android:inputType="textMultiLine"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+            app:layout_constraintStart_toEndOf="@+id/editTextEmail"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
         <Button
             android:id="@+id/btnSubmit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="76dp"
-            android:layout_marginTop="76dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="48dp"
             android:text="@string/submit"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextMsg" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
 
         <EditText
             android:id="@+id/editTextEmail"
-            android:layout_width="360dp"
+            android:layout_width="300dp"
             android:layout_height="44dp"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="24dp"
             android:ems="10"
             android:hint="@string/feedbackEmail"
-            android:inputType="textWebEmailAddress"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextName" />
 
@@ -75,11 +74,11 @@
             android:id="@+id/btnReset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="76dp"
-            android:layout_marginTop="76dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="48dp"
             android:text="@string/reset"
             app:layout_constraintStart_toEndOf="@+id/btnSubmit"
-            app:layout_constraintTop_toBottomOf="@+id/editTextMsg" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
 
     </android.support.constraint.ConstraintLayout>
 

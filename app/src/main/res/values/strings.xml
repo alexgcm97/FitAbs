@@ -9,6 +9,7 @@
     <string name="feedback">Feedback</string>
     <string name="feedbackName">Enter Your Name</string>
     <string name="feedbackMsg">Enter Your Message</string>
+    <string name="feedbackEmail">Enter Your Email</string>
     <string name="submit">Submit</string>
     <string name="exercise">Exercise Guide</string>
 

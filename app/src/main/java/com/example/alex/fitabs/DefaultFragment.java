@@ -37,6 +37,7 @@ public class DefaultFragment extends Fragment {
         Date date = new Date();
         View v = inflater.inflate(R.layout.fragment_default, container, false);
         ImageView imgQuote = (ImageView) v.findViewById(R.id.imgQuote);
+        System.out.println(date.getDay());
         switch (date.getDay()) {
             case 1:
                 imgRef = storageRef.child("monday.jpg");
@@ -56,7 +57,7 @@ public class DefaultFragment extends Fragment {
             case 6:
                 imgRef = storageRef.child("saturday.jpg");
                 break;
-            case 7:
+            case 0:
                 imgRef = storageRef.child("sunday.jpg");
                 break;
         }

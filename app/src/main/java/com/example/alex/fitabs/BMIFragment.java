@@ -56,7 +56,7 @@ public class BMIFragment extends Fragment {
                     String status = "";
 
                     if (weightStr.isEmpty() || heightStr.isEmpty()) {
-                        Toast toast = Toast.makeText(getActivity().getBaseContext(), "Please enter your weight or height.", Toast.LENGTH_SHORT);
+                        Toast toast = Toast.makeText(getActivity().getBaseContext(), "Please enter your weight and height.", Toast.LENGTH_SHORT);
                         toast.show();
                     } else {
                         weight = Double.valueOf(weightStr);

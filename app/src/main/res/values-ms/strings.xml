@@ -8,9 +8,11 @@
     <string name="quote">Mutiara kata untuk hari ini</string>
     <string name="feedback">Maklum balas</string>
     <string name="feedbackName">Masukkan nama anda</string>
+    <string name="feedbackEmail">Masukkan emel anda</string>
     <string name="feedbackMsg">Msukkan mesej anda</string>
     <string name="submit">Hantar</string>
     <string name="exercise">Senaman</string>
+
 
 
     <string name="news">Berita</string>
