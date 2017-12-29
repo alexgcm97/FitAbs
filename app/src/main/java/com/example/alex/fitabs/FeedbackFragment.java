@@ -5,7 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
+import android.text.TextUtils;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,9 +36,10 @@ public class FeedbackFragment extends Fragment {
     String nameStr, msgStr, emailStr;
     EditText editTextName, editTextMsg, editTextEmail;
     Button btnSubmit, btnReset;
-    int count = 0;
+    static int count = 0;
     Date date = new Date();
-    DateFormat df = new SimpleDateFormat("dd-MM-yyyy HH:mm");
+    DateFormat df;
+    static String lastDate = "";
 
     public FeedbackFragment() {
         // Required empty public constructor
@@ -48,14 +51,18 @@ public class FeedbackFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_feedback, container, false);
-        btnSubmit = (Button) v.findViewById(R.id.btnSubmit);
-        btnReset = (Button) v.findViewById(R.id.btnReset);
-        editTextName = (EditText) v.findViewById(R.id.editTextName);
-        editTextMsg = (EditText) v.findViewById(R.id.editTextMsg);
-        editTextEmail = (EditText) v.findViewById(R.id.editTextEmail);
+        if (!lastDate.isEmpty() && !lastDate.equalsIgnoreCase(df.getDateInstance().format(new Date()))) {
+            count = 0;
+        }
+        btnSubmit = v.findViewById(R.id.btnSubmit);
+        btnReset = v.findViewById(R.id.btnReset);
+        editTextName = v.findViewById(R.id.editTextName);
+        editTextMsg = v.findViewById(R.id.editTextMsg);
+        editTextEmail = v.findViewById(R.id.editTextEmail);
 
         btnSubmit.setOnClickListener(btnListener);
         btnReset.setOnClickListener(btnListener);
+
 
         return v;
     }
@@ -67,48 +74,58 @@ public class FeedbackFragment extends Fragment {
             //do the same stuff or use switch/case and get each button ID and do different
             switch (v.getId()) {
                 case R.id.btnSubmit: {
-                    if (count > 3) {
+                    count++;
+                    if (count <= 3) {
+                        FirebaseFirestore db = FirebaseFirestore.getInstance();
+                        nameStr = editTextName.getText().toString();
+                        emailStr = editTextEmail.getText().toString();
+                        msgStr = editTextMsg.getText().toString();
+
+                        if (msgStr.isEmpty() || nameStr.isEmpty() || emailStr.isEmpty()) {
+                            Toast toast = Toast.makeText(getActivity().getBaseContext(), "Please check your name, email or message.", Toast.LENGTH_SHORT);
+                            toast.show();
+                        } else {
+                            if (!isValidEmail(emailStr)) {
+                                Toast toast = Toast.makeText(getActivity().getBaseContext(), "Please enter a valid email.", Toast.LENGTH_SHORT);
+                                toast.show();
+                            } else {
+                                Map<String, Object> feedback = new HashMap<>();
+                                feedback.put("name", nameStr);
+                                feedback.put("email", emailStr);
+                                feedback.put("dateTime", df.getDateTimeInstance().format(date));
+                                feedback.put("message", msgStr);
+
+                                db.collection("feedbacks")
+                                        .add(feedback)
+                                        .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                                            @Override
+                                            public void onSuccess(DocumentReference documentReference) {
+                                                if (count <= 3) {
+                                                    Toast toast = Toast.makeText(getActivity().getBaseContext(), "Feedback Submitted.\nDaily Feedback Count:" + count + " out of 3", Toast.LENGTH_SHORT);
+                                                    toast.show();
+                                                    lastDate = df.getDateInstance().format(date);
+                                                }
+                                                Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
+                                            }
+                                        })
+                                        .addOnFailureListener(new OnFailureListener() {
+                                            @Override
+                                            public void onFailure(@NonNull Exception e) {
+                                                Toast toast = Toast.makeText(getActivity().getBaseContext(), "Feedback Failed to Submit..", Toast.LENGTH_SHORT);
+                                                toast.show();
+                                                Log.w(TAG, "Error adding document", e);
+                                            }
+                                        });
+                            }
+                        }
+                    } else {
                         btnSubmit.setClickable(false);
                         Toast toast = Toast.makeText(getActivity().getBaseContext(), "Sorry, you have reached the daily feedback count of 3 submits.", Toast.LENGTH_SHORT);
                         toast.show();
                     }
-
-                    FirebaseFirestore db = FirebaseFirestore.getInstance();
-                    nameStr = editTextName.getText().toString();
-                    emailStr = editTextEmail.getText().toString();
-                    msgStr = editTextMsg.getText().toString();
-                    if (msgStr.isEmpty() || nameStr.isEmpty() || emailStr.isEmpty()) {
-                        Toast toast = Toast.makeText(getActivity().getBaseContext(), "Please check your name, email or message.", Toast.LENGTH_SHORT);
-                        toast.show();
-                    } else {
-                        Map<String, Object> feedback = new HashMap<>();
-                        feedback.put("name", nameStr);
-                        feedback.put("email", emailStr);
-                        feedback.put("dateTime", df.format(date));
-                        feedback.put("message", msgStr);
-
-                        db.collection("feedbacks")
-                                .add(feedback)
-                                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                                    @Override
-                                    public void onSuccess(DocumentReference documentReference) {
-                                        Toast toast = Toast.makeText(getActivity().getBaseContext(), "Feedback Submitted.\nDaily Feedback Count:" + ++count + " out of 3", Toast.LENGTH_SHORT);
-                                        toast.show();
-                                        Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
-                                    }
-                                })
-                                .addOnFailureListener(new OnFailureListener() {
-                                    @Override
-                                    public void onFailure(@NonNull Exception e) {
-                                        Toast toast = Toast.makeText(getActivity().getBaseContext(), "Feedback Failed to Submit..", Toast.LENGTH_SHORT);
-                                        toast.show();
-                                        Log.w(TAG, "Error adding document", e);
-                                    }
-                                });
-                    }
                     break;
                 }
-                case R.id.btnReset:{
+                case R.id.btnReset: {
                     editTextName.setText("");
                     editTextName.setFocusable(true);
                     editTextEmail.setText("");
@@ -119,4 +136,8 @@ public class FeedbackFragment extends Fragment {
         }
 
     };
+
+    public final static boolean isValidEmail(CharSequence target) {
+        return (!TextUtils.isEmpty(target) && Patterns.EMAIL_ADDRESS.matcher(target).matches());
+    }
 }

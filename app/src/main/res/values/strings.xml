@@ -19,45 +19,45 @@
 
     <string name="arms">Arms</string>
     <string name="armsEx">Arms Exercise</string>
-    <string name="armsName1">Bicep Curls</string>
-    <string name="armsName2">Hammer Curls</string>
-    <string name="armsName3">Tricep Push Down</string>
+    <string name="armsName1"><b>Bicep Curls</b></string>
+    <string name="armsName2"><b>Hammer Curls</b></string>
+    <string name="armsName3"><b>Tricep Push Down</b></string>
     <string name="armsEx1">Stand up straight with a dumbbell in each hand at arm length. Keep your elbows close to your torso and rotate the palms of your hands until they face forward.</string>
     <string name="armsEx2">Stand up with your torso upright and a dumbbell on each hand being held at arms length. The elbows should be close to the torso.</string>
     <string name="armsEx3">Attach a straight or angled bar to a high pulley and grab with an overhand grip (palms facing down) at shoulder width. Standing upright with the torso straight and a very small inclination forward, bring the upper arms close to your body and perpendicular to the floor.</string>
 
     <string name="chest">Chest</string>
     <string name="chestEx">Chest Exercise</string>
-    <string name="chestName1">Bench Press</string>
-    <string name="chestName2">Incline Press</string>
-    <string name="chestName3">Decline Press</string>
+    <string name="chestName1"><b>Bench Press</b></string>
+    <string name="chestName2"><b>Incline Press</b></string>
+    <string name="chestName3"><b>Decline Press</b></string>
     <string name="chestEx1">Lie faceup on a horizontal bench, with buttocks on the bench and feet flat on the ground.</string>
     <string name="chestEx2">Lie back on an incline bench with a dumbbell in each hand atop your thighs. The palms of your hands will be facing each other.</string>
     <string name="chestEx3">Lie on decline bench (between 20 ad 40 degrees). with the head angled down and feet fixe to prevent sliding and grasp the barbell with an overhand grip shoulder with.</string>
 
     <string name="shoulders">Shoulders</string>
     <string name="shouldersEx">Shoulders Exercise</string>
-    <string name="shouldersName1">Barberll Shoulder Press</string>
-    <string name="shouldersName2">Side Lateral Raise</string>
-    <string name="shouldersName3">Seated Lateral Raise</string>
+    <string name="shouldersName1"><b>Barberll Shoulder Press</b></string>
+    <string name="shouldersName2"><b>Side Lateral Raise</b></string>
+    <string name="shouldersName3"><b>Seated Lateral Raise</b></string>
     <string name="shouldersEx1">Sit on a bench with back support in a squat rack. Position a barbell at a height that is just above your head. Once you pick up the barbell with the correct grip width, lift the bar up over your head by locking your arms.</string>
     <string name="shouldersEx2">Side Lateral Raise. The dumbbell lateral raise is an isolation exercise that strengthens the entire shoulder with an emphasis on the sides of the deltoid muscles. Standing in a shoulder-width stance, grab a pair of dumbbells with palms facing inward and let them hang at your sides.</string>
     <string name="shouldersEx3">Grab a set of dumbbells and sit upright on a flat bench. Allow your arms to hang down by your sides with your palms facing towards each other.</string>
 
     <string name="leg">Leg</string>
     <string name="legEx">Leg Exercise</string>
-    <string name="legName1">Squats</string>
-    <string name="legName2">Leg Press</string>
-    <string name="legName3">Lunges</string>
+    <string name="legName1"><b>Squats</b></string>
+    <string name="legName2"><b>Leg Press</b></string>
+    <string name="legName3"><b>Lunges</b></string>
     <string name="legEx1">Begin with the barbell supported on top of the traps. The chest should be up and the head facing forward.Descend by flexing the knees, refraining from moving the hips back as much as possible.</string>
     <string name="legEx2"> Keep your upper body straight, with your shoulders back and relaxed and chin up.</string>
     <string name="legEx3">Using a leg press machine, sit down on the machine and place your legs on the platform directly in front of you at a medium (shoulder width) foot stance.</string>
 
     <string name="back">Back</string>
     <string name="backEx">Back Exercise</string>
-    <string name="backName1">DeadLift</string>
-    <string name="backName2">Bend Over Barbell Row</string>
-    <string name="backName3">Wide-Grip Pull Up</string>
+    <string name="backName1"><b>DeadLift</b></string>
+    <string name="backName2"><b>Bend Over Barbell Row</b></string>
+    <string name="backName3"><b>Wide-Grip Pull Up</b></string>
     <string name="backEx1">Grab the bar. Bend over without bending your legs. Bend your knees. Drop into position by bending your knees until your shins touch the bar.</string>
     <string name="backEx2">Holding a barbell with a pronated grip, bend your knees slightly and bring your torso forward, by bending at the waist, while keeping the back straight until it is almost parallel to the floor.</string>
     <string name="backEx3">Begin from a dead hang, elbows straight, chest up, shoulders back and tight, eyes trained on the bar above. Pull yourself up toward the bar.</string>
@@ -81,13 +81,13 @@
     <string name="romanchicken">Roman-Style Chicken</string>
 
     <string name="cloveschickenexp">
-        Ingredients:\n
+        <b>Ingredients:</b>\n
             1 whole chicken (broiler/fryer) cut into 8 pieces\n
             1/2 cup plus 2 tablespoons olive oil\n
             10 sprigs fresh thyme\n
             40 peeled cloves garlic\n
             Salt and pepper\n\n
-        Directions:\n
+        <b>Directions:</b>\n
             1) Preheat oven to 350 degrees F.\n
             2) Season chicken with salt and pepper. \n
             3) Toss with a 2 tablespoons olive oil and brown on both sides in a wide fry pan or skillet over high heat. \n
@@ -95,7 +95,7 @@
             5) Remove chicken from the oven, let rest for 5 to 10 minutes, carve, and serve. \n
     </string>
     <string name="garlicshrimpexp">
-        Ingredients:\n
+        <b>Ingredients:</b>\n
             8 tablespoons (1 stick) unsalted butter, divided\n
             1 1/2 pounds medium shrimp, peeled and deveined\n
             Kosher salt and freshly ground black pepper, to taste\n
@@ -103,7 +103,7 @@
             1/4 cup chicken stock\n
             Juice of 1 lemon, or more, to taste\n
             2 tablespoons chopped fresh parsley leaves\n\n
-        Directions:\n
+        <b>Directions:</b>\n
             1) Melt 2 tablespoons butter in a large skillet over medium high heat. \n
             2) Add shrimp, salt and pepper, to taste. Cook, stirring occasionally, until pink, about 2-3 minutes; set aside. \n
             3) Add garlic to the skillet, and cook, stirring frequently, until fragrant, about 1 minute. \n
@@ -114,7 +114,7 @@
             8) Serve immediately, garnished with parsley leaves, if desired.\n
     </string>
     <string name="romanchickenexp">
-        Ingredients:\n
+        <b>Ingredients:</b>\n
             4 skinless chicken breast halves, with ribs \n
             2 skinless chicken thighs, with bones \n
             1/2 teaspoon salt, plus 1 teaspoon \n
@@ -131,13 +131,13 @@
             1/2 cup chicken stock \n
             2 tablespoons capers \n
             1/4 cup chopped fresh flat-leaf parsley leaves \n\n
-        Directions:\n
+        <b>Directions:</b>\n
             1) Season the chicken with 1/2 teaspoon salt and 1/2 teaspoon pepper. In a heavy, large skillet, heat the olive oil over medium heat. When the oil is hot, cook the chicken until browned on both sides. Remove from the pan and set aside.\n
             2) Keeping the same pan over medium heat, add the peppers and prosciutto and cook until the peppers have browned and the prosciutto is crisp, about 5 minutes.\n
             3) Add the garlic and cook for 1 minute. Add the tomatoes, wine, and herbs. Using a wooden spoon, scrape the browned bits off the bottom of the pan. Return the chicken to the pan, add the stock, and bring the mixture to a boil. Reduce the heat and simmer, covered, until the chicken is cooked through, about 20 to 30 minutes.\n
     </string>
     <string name="salmonexp">
-        Ingredients:\n
+        <b>Ingredients:</b>\n
             2 cloves garlic, minced \n
             6 tablespoons light olive oil \n
             1 teaspoon dried basil \n
@@ -146,7 +146,7 @@
             1 tablespoon lemon juice \n
             1 tablespoon fresh parsley, chopped \n
             2 (6 ounce) fillets salmon \n\n
-        Directions:\n
+        <b>Directions:</b>\n
             1) In a medium glass bowl, prepare marinade by mixing garlic, light olive oil, basil, salt, pepper, lemon juice and parsley. Place salmon fillets in a medium glass baking dish, and cover with the marinade. Marinate in the refrigerator about 1 hour, turning occasionally. \n
             2) Preheat oven to 375 degrees F (190 degrees C). \n
             3) Place fillets in aluminum foil, cover with marinade, and seal. Place sealed salmon in the glass dish, and bake 35 to 45 minutes, until easily flaked with a fork. \n
