@@ -76,8 +76,7 @@ public class FeedbackFragment extends Fragment {
             //do the same stuff or use switch/case and get each button ID and do different
             switch (v.getId()) {
                 case R.id.btnSubmit: {
-                    count++;
-                    if (count <= 3) {
+                    if (count < 3) {
                         FirebaseFirestore db = FirebaseFirestore.getInstance();
                         nameStr = editTextName.getText().toString();
                         emailStr = editTextEmail.getText().toString();
@@ -102,8 +101,8 @@ public class FeedbackFragment extends Fragment {
                                         .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                                             @Override
                                             public void onSuccess(DocumentReference documentReference) {
-                                                if (count <= 3) {
-                                                    Toast toast = Toast.makeText(getActivity().getBaseContext(), "Feedback Submitted.\nDaily Feedback Count:" + count + " out of 3", Toast.LENGTH_SHORT);
+                                                if (count < 3) {
+                                                    Toast toast = Toast.makeText(getActivity().getBaseContext(), "Feedback Submitted.\nDaily Feedback Count:" + ++count + " out of 3", Toast.LENGTH_SHORT);
                                                     toast.show();
                                                     lastDate = df.getDateInstance().format(date);
                                                 }
