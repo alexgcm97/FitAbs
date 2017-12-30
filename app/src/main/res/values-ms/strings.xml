@@ -5,7 +5,7 @@
     <string name="action_settings">Penetapan</string>
     <string name="navigation_drawer_open">Buka laci navigasi</string>
     <string name="navigation_drawer_close">Tutup laci navigasi</string>
-    <string name="quote">Mutiara kata untuk hari ini</string>
+    <string name="quote">Quote of the Day</string>
     <string name="feedback">Maklum balas</string>
     <string name="feedbackName">Masukkan nama anda</string>
     <string name="feedbackEmail">Masukkan emel anda</string>
@@ -75,9 +75,9 @@
     <string name="bmi">BMI: </string>
 
 
-    <string name="healthyrecipe">resipi sihat</string>
+    <string name="healthyrecipe">Resipi Sihat</string>
     <string name="salmon">Salmon Panggang Ketuhar</string>
-    <string name="cloveschicken">40 ulas dan ayam</string>
+    <string name="cloveschicken">40 Ulas dan Ayam</string>
     <string name="garlicShrimp">Udang Bawang Putih</string>
     <string name="romanchicken">Ayam Gaya Roman</string>
 
@@ -92,9 +92,9 @@
         <b>Arahan:</b> \n
             1) Panaskan oven hingga 350 darjah F. \n
             2) Musim ayam dengan garam dan lada. \n
-            3) Tosok dengan 2 sudu minyak zaitun dan coklat di kedua-dua belah dalam kuali yang luas atau kuali yang luas di atas api yang tinggi. \ n
-            4) Keluarkan dari panas, tambah minyak, thyme, dan bawang putih. Tutup dan bakar selama 1 1/2 jam. \ n
-            5) Keluarkan ayam dari ketuhar, biarkan berehat selama 5 hingga 10 minit, mengukir, dan berkhidmat. \ n
+            3) Tosok dengan 2 sudu minyak zaitun dan coklat di kedua-dua belah dalam kuali yang luas atau kuali yang luas di atas api yang tinggi. \n
+            4) Keluarkan dari panas, tambah minyak, thyme, dan bawang putih. Tutup dan bakar selama 1 1/2 jam. \n
+            5) Keluarkan ayam dari ketuhar, biarkan berehat selama 5 hingga 10 minit, mengukir, dan berkhidmat.
     </string>
     <string name="garlicshrimpexp">
 
